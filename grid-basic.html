@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Grid Basic</title>
+
+    <style>
+      /* colors */
+      div {
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+
+      .row {
+        border: none;
+      }
+
+      .col {
+        background-color: #e28e8e;
+      }
+
+      .header,
+      .footer {
+        background-color: #85d37e;
+      }
+
+      /* layout */
+      .container {
+        height: 100vh;
+        /* display: flex; */
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-rows: 80px auto 80px;
+        gap: 10px;
+        padding: 24px;
+      }
+      .header {
+        /* height: 80px; */
+      }
+
+      .row {
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        /* height: 100%; */
+      }
+      .col {
+        /* flex: 1 1 auto; */
+      }
+
+      .footer {
+        /* height: 80px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="row">
+        <div class="col">Col</div>
+        <div class="col">Col</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

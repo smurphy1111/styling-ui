@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Combo</title>
+
+    <style>
+      /* colors */
+      div {
+        /* border: 1px dashed red; */
+        box-sizing: border-box;
+      }
+
+      /* layout */
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 80px auto 80px;
+        gap: 10px;
+        padding: 24px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .header img {
+        width: 80px;
+        height: auto;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 4fr));
+        gap: 40px;
+      }
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: 300px;
+      }
+
+      .column-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .truck-image {
+        width: 300px;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        background: #2767cd;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 180px;
+        padding: 8px;
+        color: white;
+      }
+
+      .buttons-wrapper img {
+        width: 24px;
+        height: auto;
+      }
+
+      .footer {
+        background: rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://clipartcraft.com/images/toyota-logo-png-large-1.png"
+        />
+        <h2>Toyota Motors</h2>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Tacoma</h3>
+          <div class="column-wrapper">
+            <div class="left">
+              <img
+                class="truck-image"
+                src="https://clipground.com/images/2019-toyota-tacoma-png-14.png"
+              />
+            </div>
+            <div class="right">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+                eaque alias minus nulla placeat labore, asperiores vel aut
+                obcaecati quasi deleniti accusamus reiciendis dolores soluta
+                aspernatur aperiam? Odio, magni pariatur.
+              </p>
+              <div class="buttons-wrapper">
+                <img
+                  src="https://icon-library.com/images/information-icon-white/information-icon-white-6.jpg"
+                />
+                <span>Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Tundra</h3>
+          <div class="column-wrapper">
+            <div class="left">
+              <img
+                class="truck-image"
+                src="http://assets.local-car-finder.com/images/_2016/toyota/tundra/main.png"
+              />
+            </div>
+            <div class="right">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+                eaque alias minus nulla placeat labore, asperiores vel aut
+                obcaecati quasi deleniti accusamus reiciendis dolores soluta
+                aspernatur aperiam? Odio, magni pariatur.
+              </p>
+              <div class="buttons-wrapper">
+                <img
+                  src="https://icon-library.com/images/information-icon-white/information-icon-white-6.jpg"
+                />
+                <span>Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Prius</h3>
+          <div class="column-wrapper">
+            <div class="left">
+              <img
+                class="truck-image"
+                src="https://www.motortrend.com/uploads/sites/10/2020/04/2020-toyota-prius-le-hybrid-4wd-5door-hatchback-angular-front.png"
+              />
+            </div>
+            <div class="right">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+                eaque alias minus nulla placeat labore, asperiores vel aut
+                obcaecati quasi deleniti accusamus reiciendis dolores soluta
+                aspernatur aperiam? Odio, magni pariatur.
+              </p>
+              <div class="buttons-wrapper">
+                <img
+                  src="https://icon-library.com/images/information-icon-white/information-icon-white-6.jpg"
+                />
+                <span>Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Rav 4</h3>
+          <div class="column-wrapper">
+            <div class="left">
+              <img
+                class="truck-image"
+                src="https://pluspng.com/img-png/toyota-rav4-png-2015-toyota-rav4-2048.png"
+              />
+            </div>
+            <div class="right">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+                eaque alias minus nulla placeat labore, asperiores vel aut
+                obcaecati quasi deleniti accusamus reiciendis dolores soluta
+                aspernatur aperiam? Odio, magni pariatur.
+              </p>
+              <div class="buttons-wrapper">
+                <img
+                  src="https://icon-library.com/images/information-icon-white/information-icon-white-6.jpg"
+                />
+                <span>Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Future Footer</div>
+    </div>
+  </body>
+</html>
